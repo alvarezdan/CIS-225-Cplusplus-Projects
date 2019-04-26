@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string name;
+	int figure, R, T, Z, rl, rw, tb, th, zB, zb, zh;
+
+	cout << "Enter your first and last name: ";
+	cin >> name;
+	cout << endl;
+
+	cout << "What kind of geometric figure is it? Enter R for rectangle, T for triangle and Z for trapeze. ";
+	cin >> figure;
+	cout << endl;
+ 
+	//statements
+	if (figure == R)
+		cout << "Enter length and width of rectangle: ";
+		cin >> rl >> rw;
+		cout << endl;
+		cout << "Thank you " << name << ". You entered R for rectangle, and the calculated area is " << rl * rw << " square feet. ";
+
+		if (figure == T)
+		cout << "Enter the base and height of triangle: ";
+		cin >> tb >> th;
+		cout << endl;
+		cout << "Thank you " << name << ". You entered T for triangle, and the calculated area is " << ((tb * th) / 2) << " square feet. ";
+
+		if (figure == Z)
+		cout << "Enter the large base, small base and height of trapeze: ";
+		cin >> zB >> zb >> zh;
+		cout << endl;
+		cout << "Thank you " << name << ". You entered z for trapeze, and the calculated area is " << ((zB + zb) * (zh / 2)) << " square feet. ";
+
+
+
+	system("pause");
+	return 0;
+}
